@@ -1,0 +1,74 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.1.17 released by Alexandros Stamatakis on February 5 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 933 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 20.05%
+
+RAxML Model Optimization up to an accuracy of 0.100000 log likelihood units
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 933
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX -f e -s 027.phy -m GTRGAMMA -t RAxML_fastTree.T6 -n T6.EVAL 
+
+
+
+Model parameters (binary file format) written to: /home/stamatak/Desktop/Protocols/tests/RAxML_binaryModelParameters.T6.EVAL
+
+
+Overall Time for Tree Evaluation 1.459339
+Final GAMMA  likelihood: -6487.558319
+
+Number of free parameters for AIC-TEST(BR-LEN): 60
+Number of free parameters for AIC-TEST(NO-BR-LEN): 9
+
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.135507
+Tree-Length: 0.548274
+rate A <-> C: 0.536390
+rate A <-> G: 0.971432
+rate A <-> T: 0.602619
+rate C <-> G: 1.658727
+rate C <-> T: 3.036687
+rate G <-> T: 1.000000
+
+freq pi(A): 0.234114
+freq pi(C): 0.256704
+freq pi(G): 0.279915
+freq pi(T): 0.229267
+
+Final tree written to:                 /home/stamatak/Desktop/Protocols/tests/RAxML_result.T6.EVAL
+Execution Log File written to:         /home/stamatak/Desktop/Protocols/tests/RAxML_log.T6.EVAL

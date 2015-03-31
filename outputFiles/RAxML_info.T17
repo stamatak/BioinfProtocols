@@ -1,0 +1,64 @@
+
+
+WARNING: RAxML is not checking sequences for duplicate seqs and sites with missing data!
+
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.1.17 released by Alexandros Stamatakis on February 5 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 933 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 20.05%
+
+RAxML computation of SH-like support values on a given tree
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 933
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX -f J -m GTRCAT -t RAxML_bestTree.T8 -p 12345 -s 027.phy -n T17 
+
+
+Time after model optimization: 0.736783
+Initial Likelihood -5408.808582
+
+NNI interchanges 0 Likelihood -5408.808582
+
+Final Likelihood of NNI-optimized tree: -5408.808582
+
+RAxML NNI-optimized tree written to file: /home/stamatak/Desktop/Protocols/tests/RAxML_fastTree.T17
+
+Same tree with SH-like supports written to file: /home/stamatak/Desktop/Protocols/tests/RAxML_fastTreeSH_Support.T17
+
+Total execution time: 0.993227

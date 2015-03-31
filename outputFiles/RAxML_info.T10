@@ -1,0 +1,84 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.1.17 released by Alexandros Stamatakis on February 5 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 933 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 20.05%
+
+RAxML Model Optimization up to an accuracy of 0.100000 log likelihood units
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 933
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX -f H -s 027.phy -t RAxML_bestTree.T8 -z mlTrees -m GTRGAMMA -n T10 
+
+
+
+
+Found 30 trees in File mlTrees
+
+Model optimization, best Tree: -6482.311707
+Tree: 0 Likelihood: -6486.996129 D(LH): -4.684422 SD: 16.007474 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 1 Likelihood: -6483.502391 D(LH): -1.190683 SD: 11.268641 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Better tree found 2 at -6482.189517
+Tree: 2 Likelihood: -6482.189517 D(LH): 0.122190 SD: 0.339585 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 3 Likelihood: -6483.481742 D(LH): -1.170035 SD: 11.262123 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 4 Likelihood: -6486.938521 D(LH): -4.626814 SD: 16.004756 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Better tree found 5 at -6482.171182
+Tree: 5 Likelihood: -6482.171182 D(LH): 0.140525 SD: 0.449735 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 6 Likelihood: -6486.934149 D(LH): -4.622441 SD: 16.006596 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 7 Likelihood: -6483.472130 D(LH): -1.160423 SD: 11.261533 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 8 Likelihood: -6486.932847 D(LH): -4.621140 SD: 16.010335 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 9 Likelihood: -6486.932255 D(LH): -4.620548 SD: 16.007690 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 10 Likelihood: -6483.470956 D(LH): -1.159249 SD: 11.261139 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 11 Likelihood: -6486.932185 D(LH): -4.620478 SD: 16.010890 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 12 Likelihood: -6486.931733 D(LH): -4.620026 SD: 16.008385 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 13 Likelihood: -6483.470569 D(LH): -1.158862 SD: 11.260858 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 14 Likelihood: -6486.931972 D(LH): -4.620265 SD: 16.011219 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 15 Likelihood: -6486.931582 D(LH): -4.619874 SD: 16.008794 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 16 Likelihood: -6486.931522 D(LH): -4.619815 SD: 16.010018 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 17 Likelihood: -6483.470415 D(LH): -1.158708 SD: 11.260727 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 18 Likelihood: -6486.931894 D(LH): -4.620187 SD: 16.011427 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 19 Likelihood: -6486.931537 D(LH): -4.619830 SD: 16.009037 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 20 Likelihood: -6483.470380 D(LH): -1.158672 SD: 11.260676 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 21 Likelihood: -6486.931879 D(LH): -4.620171 SD: 16.011519 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 22 Likelihood: -6483.470381 D(LH): -1.158674 SD: 11.260602 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 23 Likelihood: -6486.931879 D(LH): -4.620171 SD: 16.011517 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 24 Likelihood: -6483.470381 D(LH): -1.158674 SD: 11.260577 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 25 Likelihood: -6486.931877 D(LH): -4.620170 SD: 16.011546 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Better tree found 26 at -6482.163751
+Tree: 26 Likelihood: -6482.163751 D(LH): 0.147956 SD: 0.552383 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 27 Likelihood: -6483.470304 D(LH): -1.158597 SD: 11.260113 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 28 Likelihood: -6486.931935 D(LH): -4.620227 SD: 16.011544 Significantly Worse:  No (5%),  No (2%),  No (1%)
+Tree: 29 Likelihood: -6486.931541 D(LH): -4.619834 SD: 16.009013 Significantly Worse:  No (5%),  No (2%),  No (1%)

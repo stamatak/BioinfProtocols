@@ -1,0 +1,84 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.1.17 released by Alexandros Stamatakis on February 5 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 933 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 20.05%
+
+RAxML computation of per-site log likelihoods
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 933
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX -f G -s 027.phy -m GTRGAMMA -z mlTrees -n T11 
+
+
+
+
+Found 30 trees in File mlTrees
+
+Tree 0: -6487.120003
+Tree 1: -6483.561834
+Tree 2: -6482.224599
+Tree 3: -6483.500551
+Tree 4: -6486.949740
+Tree 5: -6482.178995
+Tree 6: -6486.937374
+Tree 7: -6483.474234
+Tree 8: -6486.934067
+Tree 9: -6486.933257
+Tree 10: -6483.471634
+Tree 11: -6486.932571
+Tree 12: -6486.932032
+Tree 13: -6483.470797
+Tree 14: -6486.932096
+Tree 15: -6486.931667
+Tree 16: -6486.931594
+Tree 17: -6483.470482
+Tree 18: -6486.931927
+Tree 19: -6486.931553
+Tree 20: -6483.470404
+Tree 21: -6486.931889
+Tree 22: -6483.470395
+Tree 23: -6486.931884
+Tree 24: -6483.470389
+Tree 25: -6486.931880
+Tree 26: -6482.163771
+Tree 27: -6483.470308
+Tree 28: -6486.931937
+Tree 29: -6486.931542
+
+
+Time for Optimization of per-site log likelihoods 8.120338
+Per-site Log Likelihoods written to File /home/stamatak/Desktop/Protocols/tests/RAxML_perSiteLLs.T11 in Tree-Puzzle format
+Execution information file written to :  /home/stamatak/Desktop/Protocols/tests/RAxML_info.T11

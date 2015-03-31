@@ -1,0 +1,75 @@
+#infer 10 ML trees starting from different RAP trees under the GAMMA model of rate heterogeneity
+
+raxmlHPC-AVX -s 027.phy -p 12345 -# 10 -m GTRGAMMA -n T1 
+
+#infer 10 ML trees starting from different RAP trees under the CAT model of rate heterogeneity
+
+raxmlHPC-AVX -s 027.phy -p 12345 -# 10 -m GTRCAT -n T2 
+
+#infer 10 ML trees starting from different RAP trees under the GAMMA model of rate heterogeneity using a more thorough search algorithm
+
+raxmlHPC-AVX -f o -s 027.phy -p 12345 -# 10 -m GTRGAMMA -n T3 
+
+#infer 10 ML trees starting from different completely random starting trees under the GAMMA model of rate heterogeneity
+
+raxmlHPC-AVX -d -s 027.phy -p 12345 -# 10 -m GTRGAMMA -n T4 
+
+#calculate RF distances among a set of trees
+
+raxmlHPC-AVX -f r -z parsTrees -m GTRGAMMA -n T5 
+
+# Infer just a single tree with the very fast approximate tree search
+
+raxmlHPC-AVX -f E -s 027.phy -p 12345 -m GTRGAMMA -n T6 
+
+# Calculate ML score of a fixed tree, the output tree of run T6
+
+raxmlHPC-AVX -f e -s 027.phy -m GTRGAMMA -t RAxML_fastTree.T6 -n T6.EVAL 
+
+# Infer just a single tree with the fast approximate tree search
+
+raxmlHPC-AVX -f F -s 027.phy -p 12345 -m GTRGAMMA -n T7 
+
+#evaluate the likelihood of that tree 
+
+raxmlHPC-AVX -f e -s 027.phy -m GTRGAMMA -t RAxML_fastTree.T7 -n T7.EVAL 
+
+# Do 30 ML searches on RAP starting trees under GTR+GAMMA
+
+raxmlHPC-AVX -s 027.phy -m GTRGAMMA -# 30 -p 12345 -n T8 
+
+#compute RF distances between these 30 ML trees 
+
+raxmlHPC-AVX -f r -z mlTrees -m GTRGAMMA -n T9 
+
+# Calculate SH test between the best out of 30 and the remaining 29 ML trees
+
+raxmlHPC-AVX -f H -s 027.phy -t RAxML_bestTree.T8 -z mlTrees -m GTRGAMMA -n T10 
+
+# Calculate per-site log likelihood scores for all 30 trees for downstream use with CONSEL
+
+raxmlHPC-AVX -f G -s 027.phy -m GTRGAMMA -z mlTrees -n T11 
+
+# Compute BS replicate trees with bootstopping criterion 
+
+raxmlHPC-AVX -s 027.phy -m GTRGAMMA -b 12345 -p 12345 -# autoMRE -n T12 
+
+# compute strict consensus on the BS trees
+
+raxmlHPC-AVX -J STRICT -z RAxML_bootstrap.T12 -m GTRCAT -n T13 
+
+# compute majority-rule consensus on the bootsrap trees
+
+raxmlHPC-AVX -J MR -z RAxML_bootstrap.T12 -m GTRCAT -n T14 
+
+# compute extended majority rule consensus on the bootstrap trees
+
+raxmlHPC-AVX -J MRE -z RAxML_bootstrap.T12 -m GTRCAT -n T15 
+
+# draw BS support values on the best-scoring ML tree 
+
+raxmlHPC-AVX -f b -m GTRCAT -z RAxML_bootstrap.T12 -t RAxML_bestTree.T8 -n T16 
+
+# calculate SH-like support values on the best-scoring ML tree
+
+raxmlHPC-AVX -f J -m GTRCAT -t RAxML_bestTree.T8 -p 12345 -s 027.phy -n T17

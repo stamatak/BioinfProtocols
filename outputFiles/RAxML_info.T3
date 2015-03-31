@@ -1,0 +1,96 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.1.17 released by Alexandros Stamatakis on February 5 2015.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+
+Alignment has 933 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 20.05%
+
+RAxML rapid hill-climbing mode
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+Executing 10 inferences on the original alignment using 10 distinct randomized MP trees
+
+All free model parameters will be estimated by RAxML
+GAMMA model of rate heteorgeneity, ML estimate of alpha-parameter
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 933
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+raxmlHPC-AVX -f o -s 027.phy -p 12345 -# 10 -m GTRGAMMA -n T3 
+
+
+Partition: 0 with name: No Name Provided
+Base frequencies: 0.234 0.257 0.280 0.229 
+
+Inference[0]: Time 37.228176 GAMMA-based likelihood -6488.232531, best rearrangement setting 10
+alpha[0]: 0.133455 rates[0] ac ag at cg ct gt: 0.454283 0.832472 0.526350 1.430358 2.736916 1.000000 
+Inference[1]: Time 12.760464 GAMMA-based likelihood -6485.352429, best rearrangement setting 5
+alpha[0]: 0.139657 rates[0] ac ag at cg ct gt: 0.467408 0.787174 0.508702 1.371428 2.553552 1.000000 
+Inference[2]: Time 25.918871 GAMMA-based likelihood -6488.170315, best rearrangement setting 5
+alpha[0]: 0.133601 rates[0] ac ag at cg ct gt: 0.486134 0.839649 0.523437 1.463923 2.726120 1.000000 
+Inference[3]: Time 17.883430 GAMMA-based likelihood -6488.818849, best rearrangement setting 10
+alpha[0]: 0.133233 rates[0] ac ag at cg ct gt: 0.433784 0.796843 0.503826 1.367535 2.620104 1.000000 
+Inference[4]: Time 12.961447 GAMMA-based likelihood -6484.725285, best rearrangement setting 5
+alpha[0]: 0.139925 rates[0] ac ag at cg ct gt: 0.493065 0.825297 0.534138 1.438383 2.674188 1.000000 
+Inference[5]: Time 27.032881 GAMMA-based likelihood -6488.230058, best rearrangement setting 10
+alpha[0]: 0.133452 rates[0] ac ag at cg ct gt: 0.454389 0.832661 0.526468 1.430647 2.737433 1.000000 
+Inference[6]: Time 13.211109 GAMMA-based likelihood -6483.899425, best rearrangement setting 5
+alpha[0]: 0.143326 rates[0] ac ag at cg ct gt: 0.490054 0.797330 0.476368 1.418838 2.582116 1.000000 
+Inference[7]: Time 12.753881 GAMMA-based likelihood -6485.284402, best rearrangement setting 5
+alpha[0]: 0.139687 rates[0] ac ag at cg ct gt: 0.469425 0.790750 0.511265 1.378172 2.565902 1.000000 
+Inference[8]: Time 23.986065 GAMMA-based likelihood -6488.793571, best rearrangement setting 5
+alpha[0]: 0.133292 rates[0] ac ag at cg ct gt: 0.432390 0.797933 0.504090 1.371429 2.628232 1.000000 
+Inference[9]: Time 32.139831 GAMMA-based likelihood -6488.826655, best rearrangement setting 10
+alpha[0]: 0.133252 rates[0] ac ag at cg ct gt: 0.431229 0.796248 0.502975 1.368287 2.622364 1.000000 
+
+
+Conducting final model optimizations on all 10 trees under GAMMA-based models ....
+
+Inference[0] final GAMMA-based Likelihood: -6487.734068 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.0
+Inference[1] final GAMMA-based Likelihood: -6483.808286 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.1
+Inference[2] final GAMMA-based Likelihood: -6487.734068 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.2
+Inference[3] final GAMMA-based Likelihood: -6487.734069 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.3
+Inference[4] final GAMMA-based Likelihood: -6483.808286 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.4
+Inference[5] final GAMMA-based Likelihood: -6487.734068 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.5
+Inference[6] final GAMMA-based Likelihood: -6482.323343 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.6
+Inference[7] final GAMMA-based Likelihood: -6483.808286 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.7
+Inference[8] final GAMMA-based Likelihood: -6487.734069 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.8
+Inference[9] final GAMMA-based Likelihood: -6487.734069 tree written to file /home/stamatak/Desktop/Protocols/tests/RAxML_result.T3.RUN.9
+
+
+Starting final GAMMA-based thorough Optimization on tree 6 likelihood -6482.323343 .... 
+
+Final GAMMA-based Score of best tree -6482.323343
+
+Program execution info written to /home/stamatak/Desktop/Protocols/tests/RAxML_info.T3
+Best-scoring ML tree written to: /home/stamatak/Desktop/Protocols/tests/RAxML_bestTree.T3
+
+Overall execution time: 220.844500 secs or 0.061346 hours or 0.002556 days
+
